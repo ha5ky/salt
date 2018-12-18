@@ -1,0 +1,20 @@
+<div id="dcHead">
+ <div id="head">
+  <div class="logo"><a href="index.php" title="营口洪亿盐业">营口洪亿盐业</a></div>
+  <div class="box">
+   <ul class="siteName">
+    {$site.site_name}
+   </ul>
+   <ul class="nav">
+    <li><a href="module.php"{if $cur eq 'module'} class="cur"{/if}>{if $unum.module}<span class="unum"><span>{$unum.module}</span></span>{/if}</a></li>
+    <li><a href="../index.php" target="_blank">{$lang.top_go_site}</a></li>
+    <li><a href="index.php?rec=clear_cache">{$lang.clear_cache}</a></li>
+    <li class="dropMenu"><a href="JavaScript:void(0);" class="parent">{$lang.top_welcome}{$user.user_name}</a>
+     <div class="menu"> <a href="manager.php?rec=edit&id={$user.user_id}">{$lang.top_manager_edit}</a> <a href="cloud.php?rec=account">{$lang.cloud_account}</a> </div>
+    </li>
+    <li><a href="login.php?rec=logout">{$lang.top_logout}</a></li>
+   </ul>
+  </div>
+ </div>
+</div>
+<!-- dcHead 结束 -->
